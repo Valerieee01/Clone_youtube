@@ -15,7 +15,7 @@ body{
     grid-template-areas: 
     "header header " 
     "sidebar content" ; 
-    background-color: black; 
+    background-color: #141414; 
     height: 100vh; 
 }
 
@@ -230,3 +230,35 @@ a{
 .content{
     grid-area: content;
 }
+
+/* --------------------- sidebar  -----------------------*/
+
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: #121212;
+    padding-top: 10px ;
+}
+
+.sidebar-items{
+    display: flex;
+    flex-direction: column;
+    padding: 0 14px;
+}
+
+.sidebar-item{
+    color: white;
+    text-decoration: none;
+    padding: 0 14px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: 0.1s;
+    border-radius: 10px;
+}
+
+.sidebar-item:hover{
+    background-color: #4c4c4c;
+}
+
