@@ -49,6 +49,8 @@ a{
     text-decoration: none;
 }
 
+
+
 /* Header Starts */
 
 .header{
@@ -63,6 +65,7 @@ a{
     justify-content:space-between ;
     gap: 10px;
     padding: 5px 25px;
+    z-index: 1;
 }
 
 .logo-img{
@@ -266,9 +269,91 @@ a{
     margin-bottom: 20px;
 }
 
-/* content */
+/* ------------------- content --------------------------- */
 
-.card-img{
+.video-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    grid-auto-rows: auto; /*da tamaño auto a lo que sobre */
+    grid-auto-rows: 300px;
+    height: 100vh;
+    gap: 18px;
+    padding: 8px;
+    background-color: #181818;
+}
+.video-box{
+    position: relative;
+    width: auto;
+    height: 145px;
+    display: block;
+}
+.video-content{
+    margin-bottom: 25px;
+    position: relative;
+    width: 100%;
+    padding: 18px;
+    border-radius: 12px;
+}
+
+.video-content:hover{
+    background-color:#373737;
+}
+
+.video-box img{
+    object-fit: cover;
+    border-radius: 12px;
     width: 100%;
     height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.video-details{
+    color: #fff;
+    display: flex;
+    padding-top: 12px;
+    gap: 10px;
+}
+
+.tittle{
+    font-size: 0.8rem;
+    font-weight: bold
+
+}
+
+.channel-name{
+    font-size: 0.8rem;
+    margin-top: 10px;
+    color: #aaa;
+}
+
+.views-upload{
+    display: flex;
+    font-size: 0.8rem;
+    color: #aaa;
+    gap: 10px;
+}
+
+.channel-logo{
+    position: relative;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.channel-logo img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.views{
+
+}
+
+.upload{
+
 }
